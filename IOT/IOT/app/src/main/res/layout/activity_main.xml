@@ -15,18 +15,18 @@
         android:background="@drawable/bg_home_wave"
         android:fitsSystemWindows="true">
 
-
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="103dp"
-            android:layout_height="45dp"
+            android:layout_width="67dp"
+            android:layout_height="46dp"
             android:rotationY="12"
+            android:scaleType="fitEnd"
             app:srcCompat="@drawable/logoitera" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="67dp"
+            android:layout_height="match_parent"
             android:gravity="center"
             android:text="        Server Room Warning System  "
             android:textColor="#FFFFFF"

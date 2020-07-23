@@ -24,6 +24,7 @@
             android:screenOrientation="portrait" />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         <service
             android:name=".FirebaseCloudMessagingService"
             android:exported="false">
@@ -33,6 +34,8 @@
         </service>
 
 
+=======
+>>>>>>> fdeec677148d056e93948f17a4518cdd8dd623b3
 =======
 >>>>>>> fdeec677148d056e93948f17a4518cdd8dd623b3
     </application>

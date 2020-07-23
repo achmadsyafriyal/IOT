@@ -2,9 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
 
     <FrameLayout
         android:id="@+id/flMain"
@@ -13,15 +15,24 @@
         android:background="@drawable/bg_home_wave"
         android:fitsSystemWindows="true">
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="67dp"
+            android:layout_height="46dp"
+            android:rotationY="12"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/logoitera" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="        Server Room Warning System  "
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="italic" />
     </FrameLayout>
-
-
-    <LinearLayout
-        android:id="@+id/llCurved"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:background="@drawable/bg_home_curve"
-        android:orientation="horizontal" />
 
     <TextView
         android:id="@+id/Status"
@@ -31,10 +42,9 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="0dp"
         android:gravity="center"
-        android:text="."
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
         android:textColor="#000000"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
 
@@ -48,50 +58,50 @@
         android:paddingBottom="0dp">
 
         <com.google.android.material.card.MaterialCardView
-        android:layout_width="0dp"
-        android:layout_height="163dp"
-        android:layout_margin="10dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="16dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="3dp"
-        app:strokeColor="@color/colorPrimaryDark"
-        app:strokeWidth="2dp">
+            android:layout_width="0dp"
+            android:layout_height="163dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="2dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="124dp"
-            android:layout_gravity="center">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/nilai1"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
 
             <TextView
-                android:id="@+id/nilai1"
                 android:layout_width="match_parent"
-                android:layout_height="99dp"
-                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:layout_marginBottom="0dp"
                 android:gravity="center"
-                android:text="0"
+                android:text="API"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="#000000"
-                android:textSize="30dp"
                 android:textStyle="bold" />
 
-        </RelativeLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:gravity="center"
-            android:text="API"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-    </com.google.android.material.card.MaterialCardView>
+        </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
@@ -122,7 +132,7 @@
                     android:text="0"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                     android:textColor="#000000"
-                    android:textSize="30dp"
+                    android:textSize="20dp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -143,7 +153,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="96dp"
         android:layout_weight="0.8"
         android:orientation="horizontal"
         android:paddingLeft="16dp"
@@ -179,7 +189,7 @@
                     android:text="0"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                     android:textColor="#000000"
-                    android:textSize="30dp"
+                    android:textSize="25dp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -225,7 +235,7 @@
                     android:text="0"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                     android:textColor="#000000"
-                    android:textSize="30dp"
+                    android:textSize="25dp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -245,20 +255,17 @@
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:onClick="panduan"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginLeft="64dp"
         android:layout_marginRight="64dp"
         android:layout_marginBottom="16dp"
+        android:onClick="panduan"
         android:text="Panduan"
         android:textSize="16sp"
         android:theme="@style/Theme.MaterialComponents.Light"
         app:backgroundTint="@color/colorPrimaryDark"
         app:cornerRadius="50dp" />
-
-
-
 
 
 </LinearLayout>

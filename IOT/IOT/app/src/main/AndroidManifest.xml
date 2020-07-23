@@ -21,7 +21,7 @@
         <activity
             android:name=".Panduan"
             android:screenOrientation="portrait" />
-
+        
         <service
             android:name=".FirebaseCloudMessagingService"
             android:exported="false"

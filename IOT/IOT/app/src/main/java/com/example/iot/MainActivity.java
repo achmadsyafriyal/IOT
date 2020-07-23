@@ -13,6 +13,8 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
     //inisialisasi text nilai
@@ -108,4 +110,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity. this, Panduan.class);
         startActivity(intent);
     }
+
+
+
 }

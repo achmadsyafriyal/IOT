@@ -6,22 +6,37 @@
         android:name=".fireApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Server Room Warning System"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Splash">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
         </activity>
         <activity
             android:name=".Panduan"
             android:screenOrientation="portrait" />
 
+<<<<<<< HEAD
+        <service
+            android:name=".FirebaseCloudMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
 
+
+=======
+>>>>>>> fdeec677148d056e93948f17a4518cdd8dd623b3
     </application>
+
+
 
 </manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#012935"
+    tools:context=".Splash">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:text=" "
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        app:srcCompat="@drawable/logoitera"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:gravity="center"
+        android:text="Server Room Warning System"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+</LinearLayout>
+

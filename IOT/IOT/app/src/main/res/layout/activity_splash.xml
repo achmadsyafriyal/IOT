@@ -25,19 +25,20 @@
         android:textColor="#FFFFFF"
         android:textSize="35dp"
         android:textStyle="italic" />
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="91dp"
+        android:layout_height="119dp"
+        android:gravity="center"
         android:text=" "
         android:textColor="#FFFFFF"
-        android:gravity="center"
-        android:textStyle="italic"
-        android:textSize="35dp" />
+        android:textSize="35dp"
+        android:textStyle="italic" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="216dp"
+        android:layout_height="157dp"
         app:srcCompat="@drawable/logoitera"
         tools:ignore="VectorDrawableCompat" />
 
@@ -47,7 +48,7 @@
         android:gravity="center"
         android:text="Server Room Warning System"
         android:textColor="#FFFFFF"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:textStyle="italic" />
 </LinearLayout>
 

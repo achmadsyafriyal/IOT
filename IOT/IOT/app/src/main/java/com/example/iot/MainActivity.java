@@ -14,6 +14,9 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
+import com.pusher.pushnotifications.PushNotifications;
+
+
 
 public class MainActivity extends AppCompatActivity {
     //inisialisasi text nilai
@@ -39,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        PushNotifications.start(getApplicationContext(), "49b0dce3-1eea-426d-bdf4-966979bbda02");
+        PushNotifications.addDeviceInterest("hello");
 
         nilai1 = (TextView) findViewById (R.id.nilai1);
         nilai2 = (TextView) findViewById (R.id.nilai2);
@@ -110,4 +114,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity. this, Panduan.class);
         startActivity(intent);
     }
+
 }

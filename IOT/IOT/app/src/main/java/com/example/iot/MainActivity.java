@@ -19,23 +19,15 @@ import com.pusher.pushnotifications.PushNotifications;
 
 
 public class MainActivity extends AppCompatActivity {
-    //inisialisasi text nilai
 
     private TextView nilai1;
     private TextView nilai2;
     private TextView nilai3;
     private TextView nilai4;
-    private TextView Status;
-
-
-
-    //buat reference untuk firebase (koneksi server / host firebase)
-
     private Firebase mRef1;
     private Firebase mRef2;
     private Firebase mRef3;
     private Firebase mRef4;
-    private Firebase mRef5;
 
 
     @Override
@@ -49,13 +41,11 @@ public class MainActivity extends AppCompatActivity {
         nilai2 = (TextView) findViewById (R.id.nilai2);
         nilai3 = (TextView) findViewById (R.id.nilai3);
         nilai4 = (TextView) findViewById (R.id.nilai4);
-        Status = (TextView) findViewById (R.id.Status);
 
         mRef1 = new Firebase ("https://sensoriot-39203.firebaseio.com/api");
         mRef2 = new Firebase ("https://sensoriot-39203.firebaseio.com/smoke1");
         mRef3 = new Firebase ("https://sensoriot-39203.firebaseio.com/smoke2");
         mRef4 = new Firebase ("https://sensoriot-39203.firebaseio.com/suhu");
-        mRef5 = new Firebase ("https://sensoriot-39203.firebaseio.com/status");
 
         mRef1.addValueEventListener(new ValueEventListener() {
             @Override
@@ -98,16 +88,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mRef5.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String status = dataSnapshot.getValue(String.class);
-                Status.setText(status);
-           }
-           @Override
-            public void onCancelled(FirebaseError firebaseError) {
-            }
-       });
 
     }
     public void panduan  (View view) {

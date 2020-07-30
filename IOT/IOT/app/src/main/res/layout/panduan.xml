@@ -12,6 +12,12 @@
         android:background="@drawable/bg_home_wave"
         android:fitsSystemWindows="true">
 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="85dp"
+            android:layout_height="46dp"
+            app:srcCompat="@drawable/logoprovinsilampung" />
+
     </FrameLayout>
     <TextView
         android:layout_width="match_parent"
@@ -21,7 +27,7 @@
         android:text="PANDUAN"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
         android:textColor="#000000"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
     <com.google.android.material.card.MaterialCardView

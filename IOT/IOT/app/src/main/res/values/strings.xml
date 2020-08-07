@@ -5,11 +5,11 @@
         * 600 cukup tebal.\n
         * 700 sangat tebal.\n  </string>
     <string name="fire">2. Fire \n\n
-        * Jika terdapat api akan mengirimkan  notifikasi.
+        * Jika terdapat API akan mengirimkan  notifikasi.
         </string>
 
     <string name = "suhu">1. Temperature \n\n
-        * Nilai 35 akan mengirimkan notifikasi
+        * Nilai 35 akan mengirimkan notifikasi.
 
     </string>
 

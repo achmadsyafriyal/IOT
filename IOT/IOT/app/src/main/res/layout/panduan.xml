@@ -14,14 +14,15 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="85dp"
+            android:layout_width="720dp"
             android:layout_height="46dp"
             app:srcCompat="@drawable/logoprovinsilampung" />
 
     </FrameLayout>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="46dp"
+        android:layout_height="66dp"
         android:layout_marginTop="15dp"
         android:gravity="center"
         android:text="PANDUAN"
@@ -31,8 +32,8 @@
         android:textStyle="bold" />
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="373dp"
-        android:layout_height="524dp"
+        android:layout_width="344dp"
+        android:layout_height="431dp"
         android:layout_margin="10dp"
         android:layout_weight="1"
         android:gravity="center"
@@ -43,28 +44,38 @@
         app:strokeColor="@color/colorPrimaryDark"
         app:strokeWidth="2dp">
 
+
         <RelativeLayout
-            android:layout_width="358dp"
-            android:layout_height="508dp"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="466dp"
-                android:layout_marginTop="15dp"
-                android:gravity="center"
-                android:text="ISI PANDUAN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="197dp"
+                android:text="@string/fire"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="#000000"
-                android:textSize="12dp"
+                android:textSize="15dp"
                 android:textStyle="" />
+
 
         </RelativeLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="373dp"
-        android:layout_height="524dp"
+        android:layout_width="345dp"
+        android:layout_height="431dp"
         android:layout_margin="10dp"
         android:layout_weight="1"
         android:gravity="center"
@@ -75,25 +86,84 @@
         app:strokeColor="@color/colorPrimaryDark"
         app:strokeWidth="2dp">
 
+
         <RelativeLayout
-            android:layout_width="358dp"
-            android:layout_height="508dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="466dp"
-                android:layout_marginTop="15dp"
-                android:gravity="center"
-                android:text="ISI PANDUAN"
+                android:layout_width="313dp"
+                android:layout_height="91dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="197dp"
+                android:text="@string/smoke"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="#000000"
-                android:textSize="12dp"
+                android:textSize="15dp"
                 android:textStyle="" />
 
         </RelativeLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="347dp"
+        android:layout_height="431dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:strokeColor="@color/colorPrimaryDark"
+        app:strokeWidth="2dp">
+
+
+        <RelativeLayout
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="197dp"
+                android:text="@string/suhu"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
 
 
 </LinearLayout>

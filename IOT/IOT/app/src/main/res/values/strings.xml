@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name"></string>
+    <string name="smoke">2. Smoke 1, Smoke 2 :\n
+        - Jika  nilai 500  terdeteksi asap dan akan mengirimkan notifikasi.\n
+        - 600 cukup tebal.\n
+        - 700 sangat tebal.\n  </string>
+    <string name="fire">3. Fire \n
+        - Jika terdapat api akan mengirimkan notifikasi.
+        </string>
+
+    <string name = "suhu">1. Temperature \n
+        - Nilai 35 akan mengirimkan notifikasi
+
+    </string>
+
+
+
 </resources>

@@ -8,7 +8,7 @@
     android:orientation="vertical">
 
 
-    <FrameLayout
+    <RelativeLayout
         android:id="@+id/flMain"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
@@ -17,16 +17,18 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="85dp"
-            android:layout_height="46dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
             app:srcCompat="@drawable/logoprovinsilampung" />
 
 
-    </FrameLayout>
+    </RelativeLayout>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="67dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="0dp"
@@ -40,16 +42,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="3dp"
+        android:layout_height="160dp"
         android:layout_marginTop="10dp"
-        android:layout_weight="0.8"
+        android:weightSum="2"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:paddingBottom="0dp">
 
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="0dp"
-            android:layout_height="163dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -86,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="API"
+                android:text="Fire"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="#000000"
                 android:textStyle="bold" />
@@ -94,8 +96,8 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="0dp"
-            android:layout_height="162dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -112,7 +114,7 @@
                 android:layout_gravity="center">
 
                 <TextView
-                    android:id="@+id/nilai2"
+                    android:id="@+id/nilai4"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_alignParentBottom="true"
@@ -132,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="ASAP 1"
+                android:text="Temperatur "
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="#000000"
                 android:textStyle="bold" />
@@ -143,16 +145,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="96dp"
-        android:layout_weight="0.8"
+        android:layout_height="160dp"
+        android:weightSum="2"
         android:orientation="horizontal"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:paddingBottom="16dp">
 
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="0dp"
-            android:layout_height="156dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -169,7 +171,7 @@
                 android:layout_gravity="center">
 
                 <TextView
-                    android:id="@+id/nilai3"
+                    android:id="@+id/nilai2"
                     android:layout_width="match_parent"
                     android:layout_height="86dp"
                     android:layout_alignParentBottom="true"
@@ -189,7 +191,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="ASAP 2"
+                android:text="Smoke 1"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="#000000"
                 android:textStyle="bold" />
@@ -197,8 +199,8 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="0dp"
-            android:layout_height="156dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:gravity="center"
@@ -215,7 +217,7 @@
                 android:layout_gravity="center">
 
                 <TextView
-                    android:id="@+id/nilai4"
+                    android:id="@+id/nilai3"
                     android:layout_width="match_parent"
                     android:layout_height="89dp"
                     android:layout_alignParentBottom="true"
@@ -235,7 +237,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="SUHU"
+                android:text="Smoke 2"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="#000000"
                 android:textStyle="bold" />

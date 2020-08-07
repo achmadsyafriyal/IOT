@@ -5,6 +5,7 @@ import androidx.core.app.NotificationCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String api = dataSnapshot.getValue(String.class);
+                Log.d("nilai1",""+api);
                 nilai1.setText(api);
             }
             @Override
@@ -81,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String suhu = dataSnapshot.getValue(String.class);
-                nilai4.setText(suhu);
+                nilai4.setText(suhu + " °C");
             }
             @Override
             public void onCancelled(FirebaseError firebaseError) {

@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView nilai2;
     private TextView nilai3;
     private TextView nilai4;
+
     private Firebase mRef1;
     private Firebase mRef2;
     private Firebase mRef3;
